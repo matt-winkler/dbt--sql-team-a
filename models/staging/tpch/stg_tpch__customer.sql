@@ -10,7 +10,7 @@ renamed as (
 
     select
         c_custkey as customer_key,
-        c_name,
+        c_name as customer_name,
         c_address,
         c_nationkey,
         c_phone,
