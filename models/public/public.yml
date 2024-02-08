@@ -1,0 +1,7 @@
+
+models:
+  - name: customers_public
+    config:
+      access: public
+      contract:
+        enforced: false
