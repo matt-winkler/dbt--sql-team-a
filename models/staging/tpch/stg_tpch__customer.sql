@@ -9,7 +9,7 @@ source as (
 renamed as (
 
     select
-        c_custkey,
+        c_custkey as customer_key,
         c_name,
         c_address,
         c_nationkey,
