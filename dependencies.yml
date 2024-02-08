@@ -1,0 +1,3 @@
+packages:
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_PAT')}}@github.com/matt-winkler/dbt--sources.git"
+    revision: main
