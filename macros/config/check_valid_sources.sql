@@ -1,10 +1,11 @@
 {% macro check_valid_sources(graph) %}
    
-   {% for node in graph %}
-      
-      {% do log('something', info=true)%}
-      {% do log(node, info=true) %}
+   {# if execute #}
+     
+     {% for node in graph.nodes.values() | selectattr("resource_type", "equalto", "source") %}
+       {% do log(node.unique_id, info=true) %}
+     {% endfor %}
 
-   {% endfor %}
+  {# endif #}
 
 {% endmacro %}
