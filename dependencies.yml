@@ -1,3 +1,5 @@
 packages:
   - git: "https://{{env_var('DBT_ENV_SECRET_GIT_PAT')}}@github.com/matt-winkler/dbt--sources.git"
     revision: main
+  - package: dbt-labs/dbt_project_evaluator
+    version: 0.9.0
